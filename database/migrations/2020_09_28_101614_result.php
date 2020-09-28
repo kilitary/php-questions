@@ -13,7 +13,12 @@ class Result extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('results', function(Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('full_name');
+            $table->integer('score');
+            $table->integer('time');
+        });
     }
 
     /**

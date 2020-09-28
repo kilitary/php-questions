@@ -13,7 +13,13 @@ class Questions extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('questions', function(Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('question');
+            $table->boolean('done');
+            $table->timestamps();
+            $table->index(['id']);
+        });
     }
 
     /**
