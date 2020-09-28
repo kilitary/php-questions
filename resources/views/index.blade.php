@@ -9,9 +9,9 @@
 
             <form method="post" action="/prepare">
                 {{csrf_field()}}
-                <label for="name">Введите ваше полное имя</label>
-                <input name="full_name" placeholder="Иванов В.В." required>
-                <button>начать</button>
+                <label style='margin:10px' for="name">Введите ваше полное имя</label><br/>
+                <input style='margin:10px;width:300px' name="full_name" placeholder="Иванов В.В." required><br/>
+                <button style='margin:10px'>начать</button>
             </form>
         </div>
     </div>
